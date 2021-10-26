@@ -1,0 +1,12 @@
+<div th:fragment="_card" class="card my-4" >
+    <div class="embed-responsive embed-responsive-4by3">
+        <img th:src="@{'/imagenes/'}+${videojuego.imagen}" class="card-img-top embed-responsive-item" alt="videojuego imagen">
+    </div>
+    <div class="card-body">
+        <h5 class="card-title"th:text="${videojuego.titulo}"></h5>
+        <p class="card-text">Precio : <span th:text="${videojuego.precio}"></span></p>
+        <a th:href="@{/detalle/}+${videojuego.id}" class="btn btn-primary btn-block">
+            ver detalle
+        </a>
+    </div>
+</div>

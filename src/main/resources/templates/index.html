@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+<!---
+le agregamos la variable "saludo" a la etiqueta h1 y desde el controlador.
+Asi remplaza lo que esta dentro de la etiqueta por la variable que le pasamos. Asi podemos trabajar comodamente con los prototipos
+estaticos de video
+--->
+    <h1 th:text="${saludo}">Hola Mundo</h1>
+</body>
+</html>
